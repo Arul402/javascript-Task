@@ -1,0 +1,13 @@
+<!-- when ever the button clicked it should display Hello inthe next lines -->
+<h1>Click On the Button To Add Hello</h1>
+<button onclick="update()">Add</button>
+<div id="result"></div>
+
+<script>
+    var res=document.getElementById("result")
+    function update(){
+        var item=document.createElement("h1")
+        item.textContent="Hello"
+        res.append(item)
+    }
+</script>

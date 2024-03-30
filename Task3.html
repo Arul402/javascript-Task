@@ -1,0 +1,13 @@
+<h1>Click On the Button to Change Color</h1>
+<button onclick="change()" id="butt">Button Color</button>
+<button onclick="change1()" >Body Color</button>
+<script>
+    var bt=document.getElementById("butt")
+    var bd=document.querySelector("body")
+    function change(){
+        bt.style.backgroundColor="red"
+    }
+    function change1(){
+        bd.style.backgroundColor="blue"
+    }
+</script>

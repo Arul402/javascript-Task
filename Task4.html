@@ -1,0 +1,55 @@
+<!-- <h1 id="result">Name</h1>
+<button onclick="btn1()" id="bt1">Arul</button>
+<button onclick="btn2()" id="bt2">Kongu</button>
+<button onclick="btn3()" id="bt3">College</button>
+<script>
+    var res=document.getElementById("result")
+    var b1=document.getElementById("bt1")
+    var b2=document.getElementById("bt2")
+    var b3=document.getElementById("bt3")
+    function btn1(){
+        res.textContent=b1.textContent
+    }
+    function btn2(){
+        res.textContent=b2.textContent
+    }
+    function btn3(){
+        res.textContent=b3.textContent
+    }
+</script> -->
+
+
+
+
+
+
+    <!-- Approach 2 -->
+<h1>Click The Button To Display The Content</h1>
+<button onclick="btn1(event)" id="bt1">Arul</button>
+<button onclick="btn2(event)" id="bt2">Kongu</button>
+<button onclick="btn3(event)" id="bt3">College</button>
+<input type="text" placeholder="Add Your Own Button" id="name" onkeyup="key()"/>
+<button onclick="btn4(event)" id="res"></button>
+<h1 id="result">Name</h1>
+<script>
+    var res=document.getElementById("result")
+    var own=document.getElementById("name")
+    var bt=document.getElementById("res")
+    function btn1(event){
+        res.textContent=event.target.textContent
+    }
+    function btn2(event){
+        res.textContent=event.target.textContent
+    }
+    function btn3(event){
+        res.textContent=event.target.textContent
+    }
+    function btn4(event){
+        res.textContent=event.target.textContent
+    }
+    // console.log(own.value)
+    function key(){
+        bt.textContent=own.value
+    }
+</script>
+ 

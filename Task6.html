@@ -1,0 +1,42 @@
+<!-- Delete while click on the content -->
+<!-- <h1 id="res1" onclick="del1()">One</h1>
+<h1 id="res2" onclick="del2()">Two</h1>
+<h1 id="res3" onclick="del3()">Three</h1>
+<h1 id="res4" onclick="del4()">Four</h1>
+<h1 id="res5" onclick="del5()">Five</h1>
+<script>
+    var r1=document.getElementById("res1")
+    var r2=document.getElementById("res2")
+    var r3=document.getElementById("res3")
+    var r4=document.getElementById("res4")
+    var r5=document.getElementById("res5")
+    function del1(){
+        r1.remove()
+    }
+    function del2(){
+        r2.remove()
+    }
+    function del3(){
+        r3.remove()
+    }
+    function del4(){
+        r4.remove()
+    }
+    function del5(){
+        r5.remove()
+    }
+</script> -->
+
+
+<!-- Another Approach -->
+<h1>Click The Content To Delete</h1>
+<h1  onclick="del(event)">One</h1>
+<h1  onclick="del(event)">Two</h1>
+<h1  onclick="del(event)">Three</h1>
+<h1  onclick="del(event)">Four</h1>
+<h1  onclick="del(event)">Five</h1>
+<script>
+    function del(event){
+        event.target.remove()
+    }
+</script>

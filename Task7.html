@@ -1,0 +1,43 @@
+<!-- on click will change the background color of the div
+        And set the class attribute using JS -->
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+    .parent{
+        width: 900px;
+        transition: 2s;
+    }
+    .parent1{
+        height: 100px;
+        width: 100px;
+        transition: 2s;
+    }
+</style>
+<h1>Click On The Button To See The Changes</h1>
+<div></div>
+<button onclick="col1()">Red</button>
+<button onclick="col2()">Green</button>
+<button onclick="col3()">Blue</button>
+<button onclick="Size()">Size</button>
+<button onclick="resize()">Resize</button>
+<script>
+    var div=document.querySelector("div")
+    function col1(){
+        div.style.backgroundColor="red"
+    }
+    function col2(){
+        div.style.backgroundColor="green"
+    }
+    function col3(){
+        div.style.backgroundColor="blue"
+    }
+    function Size(){
+        div.setAttribute("class","parent")
+    }
+    function resize(){
+        div.setAttribute("class","parent1")
+    }
+</script>

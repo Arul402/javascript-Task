@@ -1,0 +1,12 @@
+<!-- What content an User type in the text box should display in the below h1 tag  -->
+<h1>Enter The Content In The Box To Display It</h1>
+<input type="text" onkeyup="display()" id="text" />
+<h1 id="result"></h1>
+
+<script>
+    var inp=document.getElementById("text")
+    var res=document.getElementById("result")
+    function display(){
+        res.textContent=inp.value  // we can acess the content in the input tag using value
+    }
+</script>
